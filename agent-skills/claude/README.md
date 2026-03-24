@@ -17,6 +17,9 @@ Built by Adem Vessell — @AdemVessell on X
 ## Install
 
 1. Pick a skill from the index above
-2. Open the subfolder and read `SKILL.md`
-3. **Claude Code:** Place in your project directory or use `.skill upload`
-4. **Claude.ai:** Copy into a Project's custom instructions or attach as a knowledge file
+2. Open the subfolder and review the `SKILL.md`
+3. **Claude Code (personal):** `mkdir -p ~/.claude/skills/<skill-name>` then copy `SKILL.md` (and any `references/` folder) into it
+4. **Claude Code (project):** `mkdir -p .claude/skills/<skill-name>` then copy `SKILL.md` into it
+5. **Claude.ai:** Copy the contents into a Project's custom instructions or attach as a knowledge file
+
+See the full **[Install Guide](../../INSTALL.md)** for details.

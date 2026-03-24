@@ -39,7 +39,21 @@ agent-skills/
 
 ## How to Use
 
-**Claude Code:** Place the `SKILL.md` file in your project directory or use `.skill upload` to register it. The agent will pick up the skill automatically.
+See the full **[Install Guide](../INSTALL.md)** for detailed step-by-step instructions.
+
+**Claude Code (personal — all projects):**
+```bash
+mkdir -p ~/.claude/skills/<skill-name>
+cp claude/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/
+```
+
+**Claude Code (project — single repo):**
+```bash
+mkdir -p .claude/skills/<skill-name>
+cp path/to/claude/<skill-name>/SKILL.md .claude/skills/<skill-name>/
+```
+
+Skills are auto-discovered — invoke with `/<skill-name>` or Claude picks them up automatically.
 
 **Claude.ai:** Copy the contents of `SKILL.md` into a Project's custom instructions or attach it as a knowledge file.
 

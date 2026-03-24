@@ -21,6 +21,7 @@ All skills and instruction sets across the entire repo:
 ```
 ai-skills/
 ├── README.md                          ← You are here
+├── INSTALL.md                         ← Full install guide
 ├── custom-instructions/
 │   ├── README.md                      ← Index of all custom instruction sets
 │   ├── claude/
@@ -46,25 +47,31 @@ Each skill or instruction set lives in its own subfolder containing:
 
 ## Install Instructions
 
-### Claude
+See the full **[Install Guide](INSTALL.md)** for detailed step-by-step instructions.
 
-**Agent Skills (SKILL.md files)**
+### Quick Start
 
-- **Claude Code:** Place the `SKILL.md` file in your project directory or use `.skill upload` to register it.
-- **Claude.ai:** Copy the contents of `SKILL.md` into a Project's custom instructions or attach it as a knowledge file.
+**Claude Code (Agent Skills)**
 
-**Custom Instructions (INSTRUCTIONS.md files)**
+```bash
+# Personal install (available in all projects)
+mkdir -p ~/.claude/skills/<skill-name>
+cp agent-skills/claude/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/
+# Copy supporting files if they exist
+cp -r agent-skills/claude/<skill-name>/references ~/.claude/skills/<skill-name>/ 2>/dev/null
 
-- **Claude Code:** Add the contents to your `CLAUDE.md` or project instructions file.
-- **Claude.ai:** Paste the contents into your profile-level or project-level custom instructions.
+# Project install (this repo only)
+mkdir -p .claude/skills/<skill-name>
+cp agent-skills/claude/<skill-name>/SKILL.md .claude/skills/<skill-name>/
+```
 
-### Grok
+**Claude.ai** — Copy the contents of `SKILL.md` into a Project's custom instructions or attach it as a knowledge file.
 
-**Custom Instructions & Skills**
+**Claude Code (Custom Instructions)** — Add the contents of `INSTRUCTIONS.md` to your `CLAUDE.md` or project instructions file.
 
-- Open Grok and navigate to your custom instructions panel.
-- Paste the contents of the relevant `INSTRUCTIONS.md` or `SKILL.md` file directly into the custom instructions field.
-- Grok applies custom instructions globally to all conversations once set.
+**Claude.ai (Custom Instructions)** — Paste the contents into your profile-level or project-level custom instructions.
+
+**Grok** — Paste the contents of `SKILL.md` or `INSTRUCTIONS.md` into Grok's custom instructions panel. Instructions apply globally to all conversations.
 
 ---
 
