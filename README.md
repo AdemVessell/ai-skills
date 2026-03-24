@@ -12,7 +12,7 @@ All skills and instruction sets across the entire repo:
 
 | Name | Type | Model | Description | Tags |
 |------|------|-------|-------------|------|
-| *Entries will appear here as skills and instructions are added.* | | | | |
+| [Ethereal Burn](agent-skills/claude/ethereal-burn/) | Agent Skill | Claude | Constrained poetic prompt engine — burns default probability basins to produce sensation-driven image prompts from material truth, tactile paradox, and atmospheric residue | `image-prompting`, `creative-writing`, `style-system` |
 
 ---
 

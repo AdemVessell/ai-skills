@@ -12,7 +12,7 @@ Built by Adem Vessell — @AdemVessell on X
 
 | Name | Description | Model | Tags |
 |------|-------------|-------|------|
-| *Entries will appear here as skills are added.* | | | |
+| [Ethereal Burn](claude/ethereal-burn/) | Constrained poetic prompt engine — burns default probability basins to produce sensation-driven image prompts from material truth, tactile paradox, and atmospheric residue | Claude | `image-prompting`, `creative-writing`, `style-system` |
 
 ---
 
